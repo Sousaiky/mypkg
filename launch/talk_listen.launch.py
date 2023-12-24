@@ -1,3 +1,6 @@
+#SPDX-FileCopyrightText: 2023 Soshi Saiki
+#SPDX-Licence-Identifire: BSD-3-Clause
+
 import launch
 import launch.actions
 import launch.substitutions
