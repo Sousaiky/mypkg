@@ -5,6 +5,7 @@
 import rclpy                     #ROS 2のクライアントのためのライブラリ
 from rclpy.node import Node      #ノードを実装するためのNodeクラス（クラスは第10回で）
 from person_msgs.srv import Query   #通信の型（16ビットの符号付き整数）
+import random
 
 #class Talker():
     #def __init__(self, node):  # オブジェクトを作ると呼ばれる関数
@@ -20,9 +21,10 @@ from person_msgs.srv import Query   #通信の型（16ビットの符号付き�
         #self.n += 1
 
 #def main():
+
 def cb(request, response):
     if request.name == "上田隆一":
-        response.age = 44
+        response.age = random.choice(("大吉", "中吉", "吉", "凶"))#44
     else:
         response.age = 255
 
