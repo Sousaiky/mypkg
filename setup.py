@@ -17,7 +17,7 @@ setup(
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='saiki',
-    maintainer_email='sousaiky@yahoo.com',
+    maintainer_email='saiky@yahoo.com',
     description='a package for practice',
     license='BSD-3-Clause',
     tests_require=['pytest'],
