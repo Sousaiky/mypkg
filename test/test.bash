@@ -3,10 +3,32 @@
 dir=~
 [ "$1" != "" ] && dir="$1"   #引数があったら、そちらをホームに変える。
 
-cd $dir/ros2_ws
-colcon build
+#cd $dir/ros2_ws
+#colcon build
+#source $dir/.bashrc
+#timeout 20 ros2 launch mypkg talk_listen.launch.py > /tmp/mypkg.log
 source $dir/.bashrc
-timeout 20 ros2 launch mypkg talk_listen.launch.py > /tmp/mypkg.log
+
+cd $dir/ros2_ws/src
+
+git clone https://github.com/Sousaiky/person_msgs.git
+
+cd $dir/ros2_ws
+
+colcon build
+
+source $dir/.bashrc
+
+ros2 interface show "person_msgs/srv/Query"
+
+cd $dir/ros2_ws
+
+colcon build
+
+source $dir/.bashrc
+
+timeout 30 ros2 launch mypkg talk_listen.launch.py > /tmp/mypkg.log
+
 
 cat /tmp/mypkg.log |
 	grep '牡羊座'
