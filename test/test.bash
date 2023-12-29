@@ -23,20 +23,20 @@ cat /tmp/mypkg.log |
 cat /tmp/mypkg.log |
         grep '乙女座'
 
-cat /tmp/mypkg.log |
-        grep '天秤座'
+#cat /tmp/mypkg.log |
+        #grep '天秤座'
 
-cat /tmp/mypkg.log |
-        grep '蠍座'
+#cat /tmp/mypkg.log |
+        #grep '蠍座'
 
-cat /tmp/mypkg.log |
-        grep '射手座'
+#cat /tmp/mypkg.log |
+        #grep '射手座'
 
-cat /tmp/mypkg.log |
-        grep '山羊座'
+#cat /tmp/mypkg.log |
+        #grep '山羊座'
 
-cat /tmp/mypkg.log |
-        grep '水瓶座'
+#cat /tmp/mypkg.log |
+        #grep '水瓶座'
 
-cat /tmp/mypkg.log |
-        grep '魚座'
+#cat /tmp/mypkg.log |
+        #grep '魚座'
