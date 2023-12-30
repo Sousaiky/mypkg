@@ -5,12 +5,12 @@
 ## mypkgについて
 
 mypkgは千葉工業大学の2023年度ロボットシステム学の授業内課題である。
-また、このリポジトリははros2のパッケージです。  
+また、このリポジトリはros2のパッケージです。  
 
 ## コマンドの使用例
 
 # talker.py  
-このノードは誕生日を受け取ると、その人の星座を返し、それ以外の物を受け取るとその人の運勢を返すサービスです。  
+このノードは誕生日を受け取ると、その人の星座を返し、それ以外の入力を受け取るとその人の運勢を返すサービスです。  
 
 サービス名は/queryです  
 
@@ -22,6 +22,7 @@ $ ros2 run mypkg talker
 ```  
 
 端末２  
+例１  
 ```
 $ ros2 service call /query person_msgs/srv/Query "birthday: 813"
 waiting for service to become available...
@@ -30,7 +31,7 @@ requester: making request: person_msgs.srv.Query_Request(birthday=813)
 response:
 person_msgs.srv.Query_Response(age='獅子座')
 ```  
-
+例２  
 ```
 $ ros2 service call /query person_msgs/srv/Query "birthday: 1221"
 waiting for service to become available...
@@ -49,7 +50,7 @@ response:
 person_msgs.srv.Query_Response(age='今日の運勢が吉')
 ```
 
-#listener.py  
+# listener.py  
 このノードはtalker.pyを用いて存在する誕生日星座を列挙します  
 
 動作例 
@@ -59,8 +60,9 @@ person_msgs.srv.Query_Response(age='今日の運勢が吉')
 $ ros2 run mypkg talker
 ```
 
+端末２  
 ```
-$ ros2 run myokg listener
+$ ros2 run mypkg listener
 [INFO] [1703910395.569374612] [listener]: 君は魚座
 [INFO] [1703910395.570552153] [listener]: 君は牡羊座
 [INFO] [1703910395.571453409] [listener]: 君は双子座
@@ -145,7 +147,7 @@ $ colcon build
 
 使用の前には必ずビルド作業を行ってください  
 
-上記の send_tips.launch.py起動し、動作を確認してください 
+上記の talk_listen.launch.py起動し、動作を確認してください 
 
 # テスト環境 
 
