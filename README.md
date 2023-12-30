@@ -17,28 +17,28 @@ mypkgは千葉工業大学の2023年度ロボットシステム学の授業内�
 動作例  
   
 端末１  
-'''  
+``` 
 $ ros2 run mypkg talker  
-'''  
+```  
 
 端末２  
-'''  
+```
 $ ros2 service call /query person_msgs/srv/Query "birthday: 813"
 waiting for service to become available...
 requester: making request: person_msgs.srv.Query_Request(birthday=813)
 
 response:
 person_msgs.srv.Query_Response(age='獅子座')
-'''  
+```  
 
-'''  
+```
 $ ros2 service call /query person_msgs/srv/Query "birthday: 1221"
 waiting for service to become available...
 requester: making request: person_msgs.srv.Query_Request(birthday=1221)
 
 response:
 person_msgs.srv.Query_Response(age='射手座')
-'''  
+```
 
 存在しない日を入力した場合  
 '''  
