@@ -16,50 +16,50 @@ mypkgは千葉工業大学の2023年度ロボットシステム学の授業内�
 
 動作例  
   
-端末１
+端末１  
 '''  
 $ ros2 run mypkg talker  
 '''  
 
-端末２
-'''
+端末２  
+'''  
 $ ros2 service call /query person_msgs/srv/Query "birthday: 813"
 waiting for service to become available...
 requester: making request: person_msgs.srv.Query_Request(birthday=813)
 
 response:
 person_msgs.srv.Query_Response(age='獅子座')
-'''
+'''  
 
-'''
+'''  
 $ ros2 service call /query person_msgs/srv/Query "birthday: 1221"
 waiting for service to become available...
 requester: making request: person_msgs.srv.Query_Request(birthday=1221)
 
 response:
 person_msgs.srv.Query_Response(age='射手座')
-'''
+'''  
 
 存在しない日を入力した場合  
-'''
+'''  
 $ ros2 service call /query person_msgs/srv/Query "birthday: 842"
 requester: making request: person_msgs.srv.Query_Request(birthday=842)
 
 response:
 person_msgs.srv.Query_Response(age='今日の運勢が吉')
-'''
+'''  
 
 #listener.py  
 このノードはtalker.pyを用いて存在する誕生日星座を列挙します  
 
 動作例 
 
-端末１   
-'''
+端末１  
+'''  
 $ ros2 run mypkg talker
 '''   
 
-'''
+'''  
 $ ros2 run myokg listener
 [INFO] [1703910395.569374612] [listener]: 君は魚座
 [INFO] [1703910395.570552153] [listener]: 君は牡羊座
@@ -73,12 +73,12 @@ $ ros2 run myokg listener
 [INFO] [1703910395.582171559] [listener]: 君は射手座
 [INFO] [1703910395.583104315] [listener]: 君は山羊座
 [INFO] [1703910395.584010215] [listener]: 君は水瓶座
-'''
+'''  
 
 # talk_listen.launch.py
 このノードはtalkerとlistenerを同時に起動するlaunchファイルです  
 
-'''
+'''  
 $ ros2 launch mypkg talk_listen.launch.p
 y
 [INFO] [launch]: All log files can be found below /home/saiki/.ros/log/2023-12-30-13-29-38-414088-saikisoshi-32553
@@ -98,10 +98,11 @@ y
 [listener-2] [INFO] [1703910579.077293677] [listener]: 君は山羊座
 [listener-2] [INFO] [1703910579.078526403] [listener]: 君は水瓶座
 [INFO] [listener-2]: process has finished cleanly [pid 32557]
-'''
+'''  
+
 #導入方法
 
-'''
+'''  
 $ git clone https://github.com/Sousaiky/mypkg.git  
 
 $ cd test
@@ -139,6 +140,7 @@ Summary: 2 packages finished [3.52s]
 $ cd ~/ros_ws
 
 $ colcon build
+'''  
 
 このレポジトリのクローンはros2_ws/src内で行ってください  
 
