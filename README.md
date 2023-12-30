@@ -12,6 +12,8 @@ mypkgは千葉工業大学の2023年度ロボットシステム学の授業内�
 # talker.py  
 このノードは誕生日を受け取ると、その人の星座を返し、それ以外の入力を受け取るとその人の運勢を返すサービスです。  
 
+通信には[person_msgs](https://github.com/Sousaiky/person_msgs)に内蔵されているbirthdayとageを用いています。  
+
 サービス名は/queryです。  
 
 動作例  
@@ -165,7 +167,7 @@ URL:https://hub.docker.com/repository/docker/ryuichiueda/ubuntu22.04-ros2
 
 # 著作権/ライセンス
 * このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます。  
-このパッケージのコードは、下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）の物を、本人の許可を得て自身の著作とし,いくつかの機能を追加したものです。  
+* このパッケージのコードは、下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）の物を、本人の許可を得て自身の著作とし,いくつかの機能を追加したものです。  
 [ryuichiueda/my_slides/robosys_2022](https://github.com/ryuichiueda/my_slides/blob/master/robosys_2022)  
 [LICENCE](https://github.com/Sousaiky/mypkg/blob/master/LICENSE)  
 
