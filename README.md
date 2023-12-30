@@ -165,7 +165,9 @@ URL:https://hub.docker.com/repository/docker/ryuichiueda/ubuntu22.04-ros2
 
 # 著作権/ライセンス
 * このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます。  
+このパッケージのコードは、下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）の物を、本人の許可を得て自身の著作とし,いくつかの機能を追加したものです。  
+[ryuichiueda/my_slides/robosys_2022](https://github.com/ryuichiueda/my_slides/blob/master/robosys_2022)  
+[LICENCE](https://github.com/Sousaiky/mypkg/blob/master/LICENSE)  
 
-LICENCE:https://github.com/Sousaiky/mypkg/blob/master/LICENSE
 
 ©2023 Soshi Saiki
