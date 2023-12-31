@@ -1,7 +1,7 @@
 # mypkg
 
 ![test](https://github.com/Sousaiky/mypkg/actions/workflows/test.yml/badge.svg)
-*  * mypkgは千葉工業大学の2023年度ロボットシステム学の授業内課題です。また、このリポジトリはROS 2のパッケージです。  
+*  mypkgは千葉工業大学の2023年度ロボットシステム学の授業内課題です。また、このリポジトリはROS 2のパッケージです。  
 
 ## mypkgについて
 
