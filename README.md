@@ -147,7 +147,7 @@ Summary: 2 packages finished [2.34s]
 # テスト環境 
 
 * Ubuntu20.04.6 LTS  
-* ROS 2 Foxy Fitzroyテストの結果は問題なく動作しています。  
+* ROS 2 Foxy Fitzroy テストの結果は問題なく動作しています。  
 * Python  
 * Github Actionsのテストには千葉工業大学の上田隆一先生のコンテナを使用しています。  
   * URL:https://hub.docker.com/repository/docker/ryuichiueda/ubuntu22.04-ros2  
