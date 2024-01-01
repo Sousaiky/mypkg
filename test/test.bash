@@ -29,10 +29,10 @@ colcon build
 
 source $dir/.bashrc
 
-timeout 30 ros2 launch mypkg talk_listen.launch.py > /tmp/mypkg.log
+timeout 10 ros2 launch mypkg talk_listen.launch.py > /tmp/mypkg.log
 
-if 321 <= request.birthday <= 331 and grep -q '牡羊座' /tmp/mypkg.log; then 
-	echo 0
-else 
-	echo 1
+if grep -q '座' /tmp/mypkg.log || grep -q '今日の運勢が' /tmp/mypkg.log; then
+    echo 0	
+else
+    echo 1
 fi
