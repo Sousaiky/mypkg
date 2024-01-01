@@ -1,18 +1,13 @@
 # mypkg
 
 ![test](https://github.com/Sousaiky/mypkg/actions/workflows/test.yml/badge.svg)
-*  mypkgは千葉工業大学の2023年度ロボットシステム学の授業内課題です。また、このリポジトリはROS 2のパッケージです。  
-
-## mypkgについて
-
-*  このリポジトリにはtalker,listener,launch,testが含まれます。  
+*  mypkgは千葉工業大学の2023年度ロボットシステム学の授業内課題です。またこのリポジトリはROS 2のパッケージです。中には誕生日を受け取ると、その人の星座を返し、それ以外の入力を受け取るとその人の運勢を返すtalkerとlistenerが入っています。  
 
 ## コマンドの使用例
 
 # talker.py  
-* このノードは誕生日を受け取ると、その人の星座を返し、それ以外の入力を受け取るとその人の運勢を返すサービスです。  
 
-* 通信には[person_msgs](https://github.com/Sousaiky/person_msgs)のQuery.srv,Person.msgに内蔵されているbirthdayとageを用いています。  
+* 通信には[person_msgs](https://github.com/Sousaiky/person_msgs)のQuery.srv,Person.msgで設定したbirthdayとageを用いています。  
 
 サービス名は/queryです。  
 
@@ -112,34 +107,27 @@ $ ros2 launch mypkg talk_listen.launch.py
 ~/ros2_ws/src/$ ./test.bash
 Starting >>> mypkg
 Starting >>> person_msgs
-[2.988s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'mypkg' doesn't explicitly install the 'package.xml' file (colcon-ros currently does it implicitly but that fallback will be removed in the future)
-Finished <<< person_msgs [1.47s]
-Finished <<< mypkg [1.76s]
+[2.080s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'mypkg' doesn't explicitly install the 'package.xml' file (colcon-ros currently does it implicitly but that fallback will be removed in the future)
+Finished <<< person_msgs [0.94s]
+Finished <<< mypkg [1.14s]
 
-Summary: 2 packages finished [3.50s]
+Summary: 2 packages finished [2.32s]
+#SPDX-FileCopyrightText: 2023 Soshi Saiki
+#SPDX-Licence-Identifire: BSD-3-Clause
+
 uint16 birthday
 ---
 string age
 Starting >>> mypkg
 Starting >>> person_msgs
-[2.914s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'mypkg' doesn't explicitly install the 'package.xml' file (colcon-ros currently does it implicitly but that fallback will be removed in the future)
-Finished <<< person_msgs [1.50s]
-Finished <<< mypkg [1.80s]
+[2.085s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'mypkg' doesn't explicitly install the 'package.xml' file (colcon-ros currently does it implicitly but that fallback will be removed in the future)
+Finished <<< person_msgs [0.95s]
+Finished <<< mypkg [1.14s]
 
-Summary: 2 packages finished [3.52s]
-[listener-2] [INFO] [1703911322.350850458] [listener]: 君は牡羊座
-[listener-2] [INFO] [1703911322.351996440] [listener]: 君は双子座
-[listener-2] [INFO] [1703911322.353932095] [listener]: 君は獅子座
-[listener-2] [INFO] [1703911322.354829833] [listener]: 君は乙女座
-[listener-2] [INFO] [1703911322.355721797] [listener]: 君は乙女座
-[listener-2] [INFO] [1703911322.356619683] [listener]: 君は天秤座
-[listener-2] [INFO] [1703911322.357548788] [listener]: 君は蠍座
-[listener-2] [INFO] [1703911322.358566673] [listener]: 君は射手座
-[listener-2] [INFO] [1703911322.359521410] [listener]: 君は山羊座
-[listener-2] [INFO] [1703911322.360630684] [listener]: 君は水瓶座
-[listener-2] [INFO] [1703911322.349358488] [listener]: 君は魚座
+Summary: 2 packages finished [2.34s]
+0
 
-~/ros2_ws/src/$ cd ~/ros_ws
+~/ros2_ws/src/$ cd ros_ws
 
 ~/ros2_ws$ colcon build
 ```
