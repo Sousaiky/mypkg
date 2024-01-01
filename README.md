@@ -5,11 +5,11 @@
 
 ## talker.pyとlistener.pyについて  
 
-#トピックについて  
+# トピックについて  
 
-person型のQueryで、talkerからはperson_msgs.srvが送信されています。
+person型のQueryで、talkerからはperson_msgs.srvが送信されています。  
 
-## コマンドの使用例
+## コマンドの使用例  
 
 # talker.py  
 
