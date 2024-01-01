@@ -147,12 +147,10 @@ Summary: 2 packages finished [2.34s]
 # テスト環境 
 
 * Ubuntu20.04.6 LTS  
-* ROS 2 foxy  
-* Python 
-  * テスト済み: 3.8.10  
-* 千葉工業大学の上田隆一先生のソースコードを授業のため流用しています。  
+* ROS 2 Foxy Fitzroyテストの結果は問題なく動作しています。  
+* Python  
 * Github Actionsのテストには千葉工業大学の上田隆一先生のコンテナを使用しています。  
-  * URL:https://hub.docker.com/repository/docker/ryuichiueda/ubuntu22.04-ros2
+  * URL:https://hub.docker.com/repository/docker/ryuichiueda/ubuntu22.04-ros2  
 
 # 著作権/ライセンス
 * このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます。  
