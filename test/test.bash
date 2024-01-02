@@ -32,13 +32,13 @@ source $dir/.bashrc
 timeout 10 ros2 launch mypkg talk_listen.launch.py > /tmp/mypkg.log
 
 ng () {
-    echo "NG at Line $1"
+    #echo "NG at Line $1"
     res=1
 }
 
 res=0
 
-if grep -q 'e1' /tmp/mypkg.log || grep -q '今日の運勢が' /tmp/mypkg.log; then
+if grep -q 'hogehoge' /tmp/mypkg.log || grep -q 'hugehuge' /tmp/mypkg.log; then
     echo "OK"
 
 [ "$res" = 0 ] && echo "OK"
