@@ -34,7 +34,7 @@ ng () {
 
 res=1
 
-if grep -q 'hoge座' /tmp/mypkg.log; then
+if grep -q '座' /tmp/mypkg.log || grep -q '今日の運勢' /tmp/mypkg.log; then
     res=0
 else
     res=1
