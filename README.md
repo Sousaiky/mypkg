@@ -152,13 +152,17 @@ Summary: 2 packages finished [2.34s]
 
 使用の前には必ずビルド作業を行ってください  
 
-上記の talk_listen.launch.py起動し、動作を確認してください 
+上記の talk_listen.launch.py起動し、動作を確認してください  
+
+# 必要なソフトウェア  
+
+* Ubuntu20.04.6 LTS
+* ROS 2 Foxy Fitzroy テストの結果は問題なく動作しています。
+* Python
+
 
 # テスト環境 
 
-* Ubuntu20.04.6 LTS  
-* ROS 2 Foxy Fitzroy テストの結果は問題なく動作しています。  
-* Python  
 * Github Actionsのテストには千葉工業大学の上田隆一先生のコンテナを使用しています。  
   * URL:https://hub.docker.com/repository/docker/ryuichiueda/ubuntu22.04-ros2  
 
