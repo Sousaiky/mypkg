@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -xv
 #SPDX-FileCopyrightText: 2023 Soshi Saiki
 #SPDX-Licence-Identifire: BSD-3-Clause
 
@@ -16,50 +16,31 @@ cd $dir/ros2_ws/src
 git clone https://github.com/Sousaiky/person_msgs.git
 
 cd $dir/ros2_ws
-
 colcon build
-
 source $dir/.bashrc
 
 ros2 interface show "person_msgs/srv/Query"
 
 cd $dir/ros2_ws
-
 colcon build
-
 source $dir/.bashrc
 
 timeout 10 ros2 launch mypkg talk_listen.launch.py > /tmp/mypkg.log
 
-cat /tmp/mypkg.log |
-        grep 'hoge'
+ng () {
+    echo "NG at Line $1"
+    res=1
+}
 
-cat /tmp/mypkg.log |
-	grep '牡牛座'
+res=1
 
-cat /tmp/mypkg.log |
-        grep '双子座'
+if grep -q 'hoge座' /tmp/mypkg.log; then
+    res=0
+else
+    res=1
 
-cat /tmp/mypkg.log |
-        grep '獅子座'
+[ "$?" = 0 ] || ng ${LINENO}
 
-cat /tmp/mypkg.log |
-        grep '乙女座'
-
-cat /tmp/mypkg.log |
-        grep '天秤座'
-
-cat /tmp/mypkg.log |
-        grep '蠍座'
-
-cat /tmp/mypkg.log |
-        grep '射手座'
-
-cat /tmp/mypkg.log |
-        grep '山羊座'
-
-cat /tmp/mypkg.log |
-        grep '水瓶座'
-
-cat /tmp/mypkg.log |
-        grep '魚座'
+[ "$res" = 0 ] && echo "OK"
+exit $res
+fi
