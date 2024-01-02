@@ -1,7 +1,7 @@
 # mypkg
 
 ![test](https://github.com/Sousaiky/mypkg/actions/workflows/test.yml/badge.svg)
-*  mypkgは千葉工業大学の2023年度ロボットシステム学の授業内課題です。またこのリポジトリはROS 2のパッケージです。中には誕生日を受け取ると、その人の星座を返し、それ以外の入力を受け取るとその人の運勢を返すtalkerとlistenerが入っています。  
+*  ROS 2のパッケージであるmypkgは千葉工業大学の2023年度ロボットシステム学の授業内課題です。中には誕生日を受け取ると、その人の星座を返し、それ以外の入力を受け取るとその人の運勢を返すtalkerとlistenerが入っています。  
 
 # talker.pyとlistener.pyについて  
 
