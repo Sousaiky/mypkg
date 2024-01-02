@@ -41,11 +41,10 @@ def main():
                 node.get_logger().info('呼び出し失敗')
             else: #このelseは「exceptじゃなかったら」という意味のelse
                 node.get_logger().info("君は{}".format(response.age))
-
             break #whileを出る
 
     req = Query.Request()
-    req.birthday = 521
+    req.birthday = 520
     future = client.call_async(req) #非同期でサービスを呼び出し
 
     while rclpy.ok():
@@ -61,7 +60,7 @@ def main():
             break #whileを出る
 
     req = Query.Request()
-    req.birthday = 622
+    req.birthday = 621
     future = client.call_async(req) #非同期でサービスを呼び出し
 
     while rclpy.ok():
@@ -77,7 +76,7 @@ def main():
             break #whileを出る
 
     req = Query.Request()
-    req.birthday = 723
+    req.birthday = 722
     future = client.call_async(req) #非同期でサービスを呼び出し
 
     while rclpy.ok():
@@ -93,7 +92,7 @@ def main():
             break #whileを出る
 
     req = Query.Request()
-    req.birthday = 823
+    req.birthday = 822
     future = client.call_async(req) #非同期でサービスを呼び出し
 
     while rclpy.ok():

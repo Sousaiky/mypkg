@@ -31,16 +31,35 @@ source $dir/.bashrc
 
 timeout 10 ros2 launch mypkg talk_listen.launch.py > /tmp/mypkg.log
 
-ng () {
-    #echo "NG at Line $1"
-    res=1
-}
+cat /tmp/mypkg.log |
+        grep 'hoge'
 
-res=0
+cat /tmp/mypkg.log |
+	grep '牡牛座'
 
-if grep -q 'hogehoge' /tmp/mypkg.log || grep -q 'hugehuge' /tmp/mypkg.log; then
-    echo "OK"
+cat /tmp/mypkg.log |
+        grep '双子座'
 
-[ "$res" = 0 ] && echo "OK"
-exit $res
-fi
+cat /tmp/mypkg.log |
+        grep '獅子座'
+
+cat /tmp/mypkg.log |
+        grep '乙女座'
+
+cat /tmp/mypkg.log |
+        grep '天秤座'
+
+cat /tmp/mypkg.log |
+        grep '蠍座'
+
+cat /tmp/mypkg.log |
+        grep '射手座'
+
+cat /tmp/mypkg.log |
+        grep '山羊座'
+
+cat /tmp/mypkg.log |
+        grep '水瓶座'
+
+cat /tmp/mypkg.log |
+        grep '魚座'
