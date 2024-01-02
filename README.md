@@ -111,6 +111,9 @@ $ ros2 launch mypkg talk_listen.launch.py
 ~/ros2_ws/src/$ git clone https://github.com/Sousaiky/mypkg.git  
 
 ~/ros2_ws/src/$ ./test.bash
+
+~~~
+
 Starting >>> mypkg
 Starting >>> person_msgs
 [2.080s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'mypkg' doesn't explicitly install the 'package.xml' file (colcon-ros currently does it implicitly but that fallback will be removed in the future)
@@ -118,12 +121,18 @@ Finished <<< person_msgs [0.94s]
 Finished <<< mypkg [1.14s]
 
 Summary: 2 packages finished [2.32s]
+
+~~~
+
 #SPDX-FileCopyrightText: 2023 Soshi Saiki
 #SPDX-Licence-Identifire: BSD-3-Clause
 
 uint16 birthday
 ---
 string age
+
+~~~
+
 Starting >>> mypkg
 Starting >>> person_msgs
 [2.085s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'mypkg' doesn't explicitly install the 'package.xml' file (colcon-ros currently does it implicitly but that fallback will be removed in the future)
@@ -131,7 +140,8 @@ Finished <<< person_msgs [0.95s]
 Finished <<< mypkg [1.14s]
 
 Summary: 2 packages finished [2.34s]
-0
+
+~~~
 
 ~/ros2_ws/src/$ cd ros_ws
 

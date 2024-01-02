@@ -32,7 +32,7 @@ ng () {
     res=1
 }
 
-res=1
+res=0
 
 if grep -q '座' /tmp/mypkg.log || grep -q '今日の運勢' /tmp/mypkg.log; then
     res=0
