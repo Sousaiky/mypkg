@@ -31,8 +31,6 @@ source $dir/.bashrc
 
 timeout 10 ros2 launch mypkg talk_listen.launch.py > /tmp/mypkg.log
 
-if grep -q '座' /tmp/mypkg.log || grep -q '今日の運勢が' /tmp/mypkg.log; then
-    echo 0	
-else
-    echo 1
+if grep -q '座' /tmp/mypkg.log && grep -q '今日の運勢が' /tmp/mypkg.log; then
+    echo 0
 fi
