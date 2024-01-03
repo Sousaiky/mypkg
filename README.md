@@ -158,8 +158,8 @@ Summary: 2 packages finished [2.34s]
 
 * Ubuntu20.04.6 LTS
 * ROS 2 Foxy Fitzroy テストの結果は問題なく動作しています。
-* Python
-
+* Python  
+  * テスト済み: 3.7~3.10
 
 # テスト環境 
 
