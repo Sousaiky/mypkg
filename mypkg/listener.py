@@ -24,7 +24,7 @@ def main():
             except:
                 node.get_logger().info('呼び出し失敗')
             else: #このelseは「exceptじゃなかったら」という意味のelse
-                node.get_logger().info("君は{}".format(response.age))
+                node.get_logger().info("{}".format(response.age))
 
             break #whileを出る
 
@@ -40,7 +40,7 @@ def main():
             except:
                 node.get_logger().info('呼び出し失敗')
             else: #このelseは「exceptじゃなかったら」という意味のelse
-                node.get_logger().info("君は{}".format(response.age))
+                node.get_logger().info("{}".format(response.age))
             break #whileを出る
 
     req = Query.Request()
@@ -55,7 +55,7 @@ def main():
             except:
                 node.get_logger().info('呼び出し失敗')
             else: #このelseは「exceptじゃなかったら」という意味のelse
-                node.get_logger().info("君は{}".format(response.age))
+                node.get_logger().info("{}".format(response.age))
 
             break #whileを出る
 
@@ -71,7 +71,7 @@ def main():
             except:
                 node.get_logger().info('呼び出し失敗')
             else: #このelseは「exceptじゃなかったら」という意味のelse
-                node.get_logger().info("君は{}".format(response.age))
+                node.get_logger().info("{}".format(response.age))
 
             break #whileを出る
 
@@ -87,7 +87,7 @@ def main():
             except:
                 node.get_logger().info('呼び出し失敗')
             else: #このelseは「exceptじゃなかったら」という意味のelse
-                node.get_logger().info("君は{}".format(response.age))
+                node.get_logger().info("{}".format(response.age))
 
             break #whileを出る
 
@@ -103,7 +103,7 @@ def main():
             except:
                 node.get_logger().info('呼び出し失敗')
             else: #このelseは「exceptじゃなかったら」という意味のelse
-                node.get_logger().info("君は{}".format(response.age))
+                node.get_logger().info("{}".format(response.age))
 
             break #whileを出る
 
@@ -119,7 +119,7 @@ def main():
             except:
                 node.get_logger().info('呼び出し失敗')
             else: #このelseは「exceptじゃなかったら」という意味のelse
-                node.get_logger().info("君は{}".format(response.age))
+                node.get_logger().info("{}".format(response.age))
 
             break #whileを出る
 
@@ -135,7 +135,7 @@ def main():
             except:
                 node.get_logger().info('呼び出し失敗')
             else: #このelseは「exceptじゃなかったら」という意味のelse
-                node.get_logger().info("君は{}".format(response.age))
+                node.get_logger().info("{}".format(response.age))
 
             break #whileを出る
 
@@ -151,7 +151,7 @@ def main():
             except:
                 node.get_logger().info('呼び出し失敗')
             else: #このelseは「exceptじゃなかったら」という意味のelse
-                node.get_logger().info("君は{}".format(response.age))
+                node.get_logger().info("{}".format(response.age))
 
             break #whileを出る
 
@@ -167,7 +167,7 @@ def main():
             except:
                 node.get_logger().info('呼び出し失敗')
             else: #このelseは「exceptじゃなかったら」という意味のelse
-                node.get_logger().info("君は{}".format(response.age))
+                node.get_logger().info("{}".format(response.age))
 
             break #whileを出る
 
@@ -183,7 +183,7 @@ def main():
             except:
                 node.get_logger().info('呼び出し失敗')
             else: #このelseは「exceptじゃなかったら」という意味のelse
-                node.get_logger().info("君は{}".format(response.age))
+                node.get_logger().info("{}".format(response.age))
 
             break #whileを出る
 
@@ -199,7 +199,7 @@ def main():
             except:
                 node.get_logger().info('呼び出し失敗')
             else: #このelseは「exceptじゃなかったら」という意味のelse
-                node.get_logger().info("君は{}".format(response.age))
+                node.get_logger().info("{}".format(response.age))
 
             break #whileを出る
 
@@ -215,7 +215,7 @@ def main():
             except:
                 node.get_logger().info('呼び出し失敗')
             else: #このelseは「exceptじゃなかったら」という意味のelse
-                node.get_logger().info("君は{}".format(response.age))
+                node.get_logger().info("{}".format(response.age))
 
             break #whileを出る
 
