@@ -34,7 +34,7 @@ ng () {
 
 res=0
 
-if grep -q '座' /tmp/mypkg.log; then
+if grep -q '牡羊座' /tmp/mypkg.log && grep -q '牡羊座' /tmp/mypkg.log && grep -q '牡牛座' /tmp/mypkg.log && grep -q '双子座' /tmp/mypkg.log && grep -q '獅子座' /tmp/mypkg.log && grep -q '乙女座' /tmp/mypkg.log && grep -q '天秤座' /tmp/mypkg.log && grep -q '蠍座' /tmp/mypkg.log && grep -q '射手座' /tmp/mypkg.log && grep -q '山羊座' /tmp/mypkg.log && grep -q '水瓶座' /tmp/mypkg.log && grep -q '蟹座' /tmp/mypkg.log && grep -q '今日の運勢' /tmp/mypkg.log; then
     res=0
 else
     res=1

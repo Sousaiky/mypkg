@@ -203,6 +203,22 @@ def main():
 
             break #whileを出る
 
+    req = Query.Request()
+    req.birthday = 1633
+    future = client.call_async(req) #非同期でサービスを呼び出し
+
+    while rclpy.ok():
+        rclpy.spin_once(node) #一回だけサービスを呼び出したら終わり
+        if future.done():     #終わっていたら
+            try:
+                response = future.result() #結果を受取り
+            except:
+                node.get_logger().info('呼び出し失敗')
+            else: #このelseは「exceptじゃなかったら」という意味のelse
+                node.get_logger().info("君は{}".format(response.age))
+
+            break #whileを出る
+
     node.destroy_node() #ノードの後始末
     rclpy.shutdown()    #ノードの後始末
 

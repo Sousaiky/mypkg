@@ -67,18 +67,19 @@ $ ros2 run mypkg talker
 端末２  
 ```
 $ ros2 run mypkg listener
-[INFO] [1704214000.882658861] [listener]: 君は魚座
-[INFO] [1704214000.883620293] [listener]: 君は牡羊座
-[INFO] [1704214000.884717341] [listener]: 君は牡牛座
-[INFO] [1704214000.885683365] [listener]: 君は双子座
-[INFO] [1704214000.886497554] [listener]: 君は蟹座
-[INFO] [1704214000.887982861] [listener]: 君は獅子座
-[INFO] [1704214000.888936467] [listener]: 君は乙女座
-[INFO] [1704214000.889929174] [listener]: 君は天秤座
-[INFO] [1704214000.890544968] [listener]: 君は蠍座
-[INFO] [1704214000.891148630] [listener]: 君は射手座
-[INFO] [1704214000.891739987] [listener]: 君は山羊座
-[INFO] [1704214000.892344190] [listener]: 君は水瓶座
+[INFO] [1704372681.168881832] [listener]: 君は魚座
+[INFO] [1704372681.171309597] [listener]: 君は牡羊座
+[INFO] [1704372681.173179145] [listener]: 君は牡牛座
+[INFO] [1704372681.175152663] [listener]: 君は双子座
+[INFO] [1704372681.177236213] [listener]: 君は蟹座
+[INFO] [1704372681.179137471] [listener]: 君は獅子座
+[INFO] [1704372681.181059027] [listener]: 君は乙女座
+[INFO] [1704372681.182966136] [listener]: 君は天秤座
+[INFO] [1704372681.184794864] [listener]: 君は蠍座
+[INFO] [1704372681.186460437] [listener]: 君は射手座
+[INFO] [1704372681.188262249] [listener]: 君は山羊座
+[INFO] [1704372681.189589874] [listener]: 君は水瓶座
+[INFO] [1704372681.191171231] [listener]: 君は今日の運勢が大吉
 ```
 
 # talk_listen.launch.py
@@ -86,23 +87,24 @@ $ ros2 run mypkg listener
 
 ```
 $ ros2 launch mypkg talk_listen.launch.py
-[INFO] [launch]: All log files can be found below /home/saiki/.ros/log/2024-01-03-01-48-28-661620-saikisoshi-17254
+[INFO] [launch]: All log files can be found below /home/saiki/.ros/log/2024-01-04-21-55-45-208432-saikisoshi-20430
 [INFO] [launch]: Default logging verbosity is set to INFO
-[INFO] [talker-1]: process started with pid [17256]
-[INFO] [listener-2]: process started with pid [17258]
-[listener-2] [INFO] [1704214108.922720560] [listener]: 君は魚座
-[listener-2] [INFO] [1704214108.923625077] [listener]: 君は牡羊座
-[listener-2] [INFO] [1704214108.924307010] [listener]: 君は牡牛座
-[listener-2] [INFO] [1704214108.924984017] [listener]: 君は双子座
-[listener-2] [INFO] [1704214108.925652282] [listener]: 君は蟹座
-[listener-2] [INFO] [1704214108.926267673] [listener]: 君は獅子座
-[listener-2] [INFO] [1704214108.926932797] [listener]: 君は乙女座
-[listener-2] [INFO] [1704214108.927497840] [listener]: 君は天秤座
-[listener-2] [INFO] [1704214108.928121848] [listener]: 君は蠍座
-[listener-2] [INFO] [1704214108.928753986] [listener]: 君は射手座
-[listener-2] [INFO] [1704214108.929406307] [listener]: 君は山羊座
-[listener-2] [INFO] [1704214108.930045904] [listener]: 君は水瓶座
-[INFO] [listener-2]: process has finished cleanly [pid 17258]
+[INFO] [talker-1]: process started with pid [20432]
+[INFO] [listener-2]: process started with pid [20434]
+[listener-2] [INFO] [1704372945.713835499] [listener]: 君は魚座
+[listener-2] [INFO] [1704372945.715375393] [listener]: 君は牡羊座
+[listener-2] [INFO] [1704372945.716507644] [listener]: 君は牡牛座
+[listener-2] [INFO] [1704372945.717559610] [listener]: 君は双子座
+[listener-2] [INFO] [1704372945.718467485] [listener]: 君は蟹座
+[listener-2] [INFO] [1704372945.719593244] [listener]: 君は獅子座
+[listener-2] [INFO] [1704372945.720846840] [listener]: 君は乙女座
+[listener-2] [INFO] [1704372945.721927427] [listener]: 君は天秤座
+[listener-2] [INFO] [1704372945.722934953] [listener]: 君は蠍座
+[listener-2] [INFO] [1704372945.723927998] [listener]: 君は射手座
+[listener-2] [INFO] [1704372945.725065112] [listener]: 君は山羊座
+[listener-2] [INFO] [1704372945.725999350] [listener]: 君は水瓶座
+[listener-2] [INFO] [1704372945.726937855] [listener]: 君は今日の運勢が吉
+[INFO] [listener-2]: process has finished cleanly [pid 20434]
 ```
 
 # 導入方法
